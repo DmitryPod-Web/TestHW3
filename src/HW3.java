@@ -18,7 +18,7 @@ public class HW3 {
             System.out.println("Число равно 5");
         } else if (digit < 5) {
             System.out.println("Число меньше 5");
-        } else if (digit > 5) {
+        } else {
             System.out.println("Число больше 5");
         }
 
@@ -32,12 +32,12 @@ public class HW3 {
 
         Scanner scanner = new Scanner(System.in);
 
-        int aq = scanner.nextInt();
+        int Integer = scanner.nextInt();
 
-        if (aq <= 100 && aq >= 50) {
-            System.out.println("Число " + aq + " содержится в интервале");
+        if (Integer <= 100 && Integer >= 50) {
+            System.out.println("Число " + Integer + " содержится в интервале");
         } else {
-            System.out.println("Число " + aq + " не содержится в интервале");
+            System.out.println("Число " + Integer + " не содержится в интервале");
         }
 
 
@@ -155,7 +155,7 @@ public class HW3 {
             System.out.println(number * 2);
         } else if (number < 0) {
             System.out.println(number + 1);
-        } else if (number == 0) {
+        } else  {
             System.out.println(0);
         }
 
@@ -207,15 +207,14 @@ public class HW3 {
 //        то треугольника с такими сторонами не существует.
 
         Scanner scannerA = new Scanner(System.in);
-        Scanner scannerB = new Scanner(System.in);
-        Scanner scannerC = new Scanner(System.in);
+
 
         System.out.println("Введите сторону A");
         int longA = scannerA.nextInt();
         System.out.println("Введите сторону В");
-        int longB = scannerB.nextInt();
+        int longB = scannerA.nextInt();
         System.out.println("Введите сторону С");
-        int longC = scannerC.nextInt();
+        int longC = scannerA.nextInt();
 
         if ((longA + longB > longC) && (longB + longC > longA) && (longA + longC > longB)) {
             System.out.println("Треугольник существует!");
